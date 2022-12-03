@@ -1,4 +1,4 @@
-# Inter-Process Communications - BHAI COPY KAR RHE HO TOH FOLLOW KARLO
+# Inter-Process Communications
 
 There are 3 Programs in this file to test Inter-Process Communications between processes, The first one used Sockets, the Second uses FIFO(Named Pipes), and Message Queues.
 The first Part of all the programs is the same, where we generate 50 random strings of length 10. Then we send strings from the from the first process to the second process where we first print the string that was sent by the first process, further if we 5 strings have been send to the the second process it sends an acknoledgement to the first process in the form of the highest index string recieved. The first process then proceeds to send the next five strings. This process goes on till we Exhaust all strings, i.e. The second process sends back a max index of 50.
